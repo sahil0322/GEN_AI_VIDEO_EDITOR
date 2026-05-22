@@ -1,0 +1,9 @@
+.env
+weights/*.pth
+weights/
+storage/frames/
+storage/uploads/
+storage/processed/
+storage/outputs/
+__pycache__/
+*.pyc
