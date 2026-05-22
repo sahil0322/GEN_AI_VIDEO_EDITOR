@@ -607,7 +607,7 @@ function handleComplete(data) {
     hideProgressOverlay();
 
     // Construct the playback URL (FastAPI serves outputs/ as a static route)
-    const outputUrl = `${API_BASE}/outputs/${state.processJobId}`;
+   const outputUrl = `${API_BASE}/outputs/${state.processJobId}.mp4`;
     state.outputUrl  = outputUrl;
 
     // Load processed video
