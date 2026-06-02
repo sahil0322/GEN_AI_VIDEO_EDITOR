@@ -1,4 +1,4 @@
-# AuraEdit (GEN-AI-VIDEO-EDITOR)
+# FlowEdit (GEN-AI-VIDEO-EDITOR)
 
 🚧 **Status: Active Development (Work in Progress)** 🚧
 
