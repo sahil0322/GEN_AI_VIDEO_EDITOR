@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 # FlowEdit — Generative AI Video Enhancement Platform
-
+=======
 A full-stack video editing platform powered by latent diffusion models and
 optical flow. Upload an MP4, apply AI-driven object removal or style transfer,
 and download a temporally-consistent output — all from a browser UI.
