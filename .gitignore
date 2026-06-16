@@ -1,9 +1,77 @@
+# ── Environment & secrets ──────────────────────────────────────────────────────
 .env
-weights/*.pth
-weights/
-storage/frames/
-storage/uploads/
-storage/processed/
-storage/outputs/
+*.env.local
+
+# ── Python ──────────────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# ── Model weights (large binaries — download via download_weights.py) ──────────
+weights/*.pth
+weights/*.ckpt
+weights/*.safetensors
+weights/*.bin
+
+# ── Source-only package clones (installed via setup.sh) ────────────────────────
+RAFT/
+ProPainter/
+GroundingDINO/
+E2FGVI/
+
+# ── HuggingFace / Torch model cache ─────────────────────────────────────────────
+.cache/
+*.torch/
+
+# ── Runtime storage (user uploads, frames, outputs) ─────────────────────────────
+storage/uploads/*
+storage/frames/*
+storage/processed/*
+storage/outputs/*
+!storage/uploads/.gitkeep
+!storage/frames/.gitkeep
+!storage/processed/.gitkeep
+!storage/outputs/.gitkeep
+
+# ── Logs ────────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS files ────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / editor ────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Node (if frontend tooling is added later) ───────────────────────────────────
+node_modules/
+npm-debug.log*
+
+# ── Temp files ──────────────────────────────────────────────────────────────────
+*.tmp
+.tmp/
+tmp/

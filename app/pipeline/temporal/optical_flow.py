@@ -186,7 +186,16 @@ class RAFTFlowEngine:
         _maybe_download_weights(self._checkpoint_path)
 
         try:
-            from raft import RAFT  # type: ignore[import]
+            import sys
+            import os
+            
+            # Point Python directly to the core folder inside your RAFT directory
+            raft_core_path = os.path.abspath(os.path.join(os.getcwd(), "RAFT", "core"))
+            if raft_core_path not in sys.path:
+                sys.path.append(raft_core_path)
+            
+            from raft import RAFT
+        
         except ImportError as exc:
             raise ImportError(
                 "RAFT is not installed.  Run:\n"

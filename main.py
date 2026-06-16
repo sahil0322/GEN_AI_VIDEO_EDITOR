@@ -1,9 +1,5 @@
 # ==============================================================================
-# main.py
-#
 # FastAPI application entry point.
-# Run with:   uvicorn main:app --reload --host 0.0.0.0 --port 8000
-#
 # Responsibilities:
 #   • Creates all storage/ subdirectories on startup (lifespan)
 #   • Adds CORS middleware (origins from settings.cors_origins)
