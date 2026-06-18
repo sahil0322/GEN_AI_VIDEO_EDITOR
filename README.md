@@ -52,7 +52,7 @@ No GPU? Set `USE_REPLICATE_FALLBACK=true` in `.env` and add your
 
 ```bash
 # 1. Clone
-git clone <repo-url> flowedit && cd flowedit
+git clone <https://github.com/sahil0322/GEN_AI_VIDEO_EDITOR> flowedit && cd flowedit
 
 # 2. One-command setup (installs all deps + downloads weights ~4 GB)
 chmod +x setup.sh && ./setup.sh
